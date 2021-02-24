@@ -9,11 +9,13 @@
 .display::before {
   content: "";
   display: block;
-  width: 100%;
-  height: 100vh;
-  background-color: #002855;
+  background-color: #090a35;
   opacity: 0.6;
   position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .shape {
   position: relative;
@@ -27,6 +29,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 0 20px rgba(44, 22, 29, 0.3);
 }
 .shape__close-btn {
   padding: 9px 11px;
@@ -75,10 +78,9 @@
   line-height: 1;
   color: #b8b9b9;
 }
-    .shape__header-link--activ {
-    color: #767777;
+.shape__header-link--activ {
+  color: #767777;
 }
-
 .shape__header-title {
   font-family: "Montserrat";
   font-size: 38px;
@@ -93,7 +95,8 @@
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-}
+  box-shadow: 0px -5px 5px -5px rgba(78, 78, 78, 0.3) inset, 0px 5px 5px -5px rgba(78, 78, 78, 0.3) inset;
+  }
 .shape__form {
   display: flex;
   flex-direction: column;
@@ -153,6 +156,7 @@
 .shape__captcha-input{
   width: 320px;
   background-color: #f8f8f8;
+  margin-bottom: 10px;
 }
 .shape__captcha-imge {
   width: 82px;
@@ -162,14 +166,17 @@
   bottom: -33px;
   width: 208px;
   height: 66px;
-  margin: 768px 356px 0;
-  padding: 22px 45px 22px 44px;
   background-color: #16ba98;
   border: none;
+}
+.shape__button:hover {
+  background-color: rgb(85 187 164);
+  cursor: pointer;
 }
 .shape__button[value] {
   font-family: Roboto;
   font-size: 24px;
   line-height: 3.13;
   color: #fff;
+  text-align: center;
 }

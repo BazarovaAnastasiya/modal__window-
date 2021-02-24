@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="display">
+    <div class="shape">
+      <a class="shape__close-btn" href="#">
+        <img class="shape__close-img" src="img/х.png" alt="">
+      </a>
+      <div class="shape__header">
+        <ul class="shape__header-nav">
+          <li class="shape__header-item">
+            <a class="shape__header-link" href="#">Главная</a>
+          </li>
+          <li class="shape__header-item">
+            <a class="shape__header-link" href="#">Контакты</a>
+          </li>
+          <li class="shape__header-item">
+            <a class="shape__header-link shape__header-link--activ" href="#"> Форма обратной связи </a>
+          </li>
+        </ul>
+        <h1 class=" shape__header-title">Форма обратной связи </h1>
+      </div>
+      <div class="shape__inner">
+        <form class="shape__form" action="post">
+          <input class="shape__form-input" type="text" name="name" placeholder="Введите Ваш имя">
+          <input class="shape__form-input" type="email" name="email" placeholder="Введите Ваш Email">
+          <input class="shape__form-input" type="tel" name="tel" placeholder="Введите Ваш телефон">
+          <textarea class="shape__form-input" type="text" name="text" placeholder="Введите Ваше сообщение"></textarea>
+
+
+      </div>
+      <div class="shape__captcha">
+        <div class="shape__captcha-password">
+          <input class="shape__captcha-input shape__form-input" type="password" name="password" id="password">
+          <span class="shape__captcha-text">Введите код на картинке справа</span>
+        </div>
+        <div class="shape__captcha-imge">
+          <img class="shape__captcha-img" src="img/capcha.jpg" alt="">
+        </div>
+
+      </div>
+      <input class="shape__button" type=" submit" value="отправить">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
